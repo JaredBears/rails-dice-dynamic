@@ -1,0 +1,8 @@
+<h1><%= @num_dice %>d<%= @num_sides%></h1>
+<ul>
+<% for die in @dice do %>
+  <li><%= die %></li>
+<% end %>
+</ul>
+<p>Sum: <%= @sum %>
+<p><a href="/dice/<%= @num_dice %>/<%= @num_sides %>">Roll again</a></p>
